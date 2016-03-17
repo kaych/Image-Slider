@@ -1,0 +1,228 @@
+body {
+  font-family: 'Lato';
+  margin: 3px;
+  /*iphone6 + */
+  /* iphone 6 */
+  /* samsung */
+  /* iphone 5 */ }
+  body p {
+    font-size: 4vh; }
+  body .columns {
+    margin: 8px 8px; }
+  body .column {
+    background-color: #EEE;
+    margin: 8px 8px; }
+    body .column.invisible {
+      display: none; }
+  @media screen and (min-device-width: 375px) {
+    body #slider {
+      position: relative;
+      height: 250px;
+      min-width: 356px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 356px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (min-device-width: 375px) and (orientation: landscape) {
+    body #slider {
+      position: relative;
+      height: 475px;
+      min-width: 700px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 700px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 375px) {
+    body #slider {
+      position: relative;
+      height: 250px;
+      min-width: 320px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 320px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 375px) and (orientation: landscape) {
+    body #slider {
+      position: relative;
+      height: 440px;
+      min-width: 610px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 610px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 360px) {
+    body #slider {
+      position: relative;
+      height: 250px;
+      min-width: 305px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 305px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 360px) and (orientation: landscape) {
+    body #slider {
+      position: relative;
+      height: 430px;
+      min-width: 580px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 580px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 320px) {
+    body #slider {
+      position: relative;
+      height: 210px;
+      min-width: 265px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 265px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  @media screen and (max-device-width: 320px) and (orientation: landscape) {
+    body #slider {
+      position: relative;
+      height: 300px;
+      min-width: 500px;
+      padding: 5px;
+      overflow: hidden; }
+      body #slider ul {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        left: 0;
+        transition: all 100ms ease-in-out;
+        -webkit-transition: all 100ms ease-in-out; }
+        body #slider ul li {
+          display: block;
+          width: 500px;
+          text-align: center;
+          float: left; }
+          body #slider ul li img {
+            height: auto;
+            width: 100%; } }
+  body .indicators {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 5%; }
+    body .indicators .indicator {
+      position: relative;
+      display: inline-block;
+      margin: 2% 0.5%;
+      width: 3vh;
+      height: 3vh;
+      background-color: #C0C0C0;
+      border-radius: 50%;
+      -webkit-transition: 0.2s all linear; }
+      body .indicators .indicator.indicator-active {
+        background-color: yellowgreen; }
+  body .navigator {
+    display: none; }
+
+/*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,16 @@
+{
+  "name": "photo-gallery-app",
+  "version": "1.0.0",
+  "description": "Photo Gallery App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}

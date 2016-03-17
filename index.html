@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Pugs R Us</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.16/css/bulma.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/public/styles/style.min.css" media="handheld, only screen and (max-device-width:600px)">
+  <link rel="stylesheet" type="text/css" href="/public/styles/style.css" media="only screen and (min-device-width:480px)">
+</head> 
+
+<body>
+  <div class="container">
+
+  <nav class="navbar">
+    <p class="navbar-item is-text-centered">
+      <img src="/public/images/mainlogo.png" style="height: 38px;">
+    </p>
+  </nav>
+
+  <div class="columns">
+    <div class="column invisible"></div>
+    <div class="column is-7">
+      <div id="slider">
+        <ul id="slider-wrapper">
+          <li>
+            <img class="slider-image" id="pug1" src="/public/images/pug1.jpg">
+          </li>
+          <li>
+            <img class="slider-image" id="pug2" src="/public/images/pug2.jpg">
+          </li>
+          <li>
+            <img class="slider-image" id="pug3" src="/public/images/pug3.jpg">
+          </li>
+          <li>
+            <img class="slider-image" id="pug4" src="/public/images/pug4.jpg">
+          </li>
+           <li>
+            <img class="slider-image" id="pug5" src="/public/images/pug5.jpg">
+          </li>
+        </ul>
+        <span class="navigator" id="previous"><i class="fa fa-chevron-left"></i></span>
+        <span class="navigator" id="next"><i class="fa fa-chevron-right"></i></span>
+      </div>
+      <div class="indicators">
+        <label data-id="0" class="indicator indicator-active"></label>
+        <label data-id="1" class="indicator"></label>
+        <label data-id="2" class="indicator"></label>
+        <label data-id="3" class="indicator"></label>
+        <label data-id="4" class="indicator"></label>
+      </div>
+    </div>
+    <div class="column invisible">
+  </div>
+
+  </div>
+  <script type="text/javascript" src="/public/js/main.js"></script>
+
+</body>
+
+</html>

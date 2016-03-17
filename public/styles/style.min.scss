@@ -1,0 +1,116 @@
+@mixin sliderStyle($height, $width) {
+  #slider {
+    position: relative;
+    height: $height;
+    min-width: $width;
+    padding: 5px;
+    overflow: hidden;
+
+    ul {
+      position: absolute;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      left: 0;
+      transition: all 100ms ease-in-out;
+      -webkit-transition: all 100ms ease-in-out;
+
+      li {
+        display: block;
+        width: $width;
+        text-align: center;
+        float: left;
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+body {
+  font-family: 'Lato';
+  margin: 3px;
+
+  p {
+    font-size: 4vh;
+  }
+
+  .columns {
+    margin: 8px 8px;
+  }
+
+  .column {
+    background-color: #EEE;
+    margin: 8px 8px;
+
+    &.invisible {
+      display: none;
+    }
+  }
+
+  /*iphone6 + */
+  @media screen and (min-device-width: 375px) {
+    @include sliderStyle(250px, 356px);
+  }
+
+  @media screen and (min-device-width: 375px) and (orientation: landscape) {
+    @include sliderStyle(475px, 700px);
+  }
+
+  /* iphone 6 */
+  @media screen and (max-device-width: 375px) {
+    @include sliderStyle(250px, 320px);
+  }
+
+  @media screen and (max-device-width: 375px) and (orientation: landscape) {
+    @include sliderStyle(440px, 610px);
+  }
+
+  /* samsung */
+  @media screen and (max-device-width: 360px) {
+    @include sliderStyle(250px, 305px);
+  }
+
+  @media screen and (max-device-width: 360px) and (orientation: landscape) {
+    @include sliderStyle(430px, 580px);
+  }
+
+  /* iphone 5 */
+  @media screen and (max-device-width: 320px) {
+    @include sliderStyle(210px, 265px);
+  }
+
+  @media screen and (max-device-width: 320px) and (orientation: landscape) {
+    @include sliderStyle(300px, 500px);
+  }
+
+  .indicators {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+
+    .indicator {
+      position: relative;
+      display: inline-block;
+      margin: 2% 0.5%;
+      width: 3vh;
+      height: 3vh;
+      background-color: #C0C0C0;
+      border-radius: 50%;
+      -webkit-transition: 0.2s all linear;
+
+      &.indicator-active {
+        background-color: yellowgreen;
+      }
+    }
+  }
+
+  .navigator {
+    display: none;
+  }
+}

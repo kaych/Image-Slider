@@ -1,0 +1,116 @@
+@mixin sliderStyle($height, $width) {
+  #slider {
+    position: relative;
+    height: $height;
+    max-width: $width;
+    margin-left: 2%;
+    top: auto;
+    overflow: hidden;
+
+    ul {
+      position: absolute;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      left: 0;
+
+      li {
+        position: relative;
+        display: inline;
+        float: left;
+
+        img {
+          width: $width;
+        }
+      }
+    }
+  }
+}
+
+body {
+  font-family: 'Lato';
+
+  p {
+    font-size: 3vh;
+  }
+
+  .column {
+    background-color: #EEE;
+    margin: 5px 5px;
+
+    &.invisible {
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: 900px) {
+    @include sliderStyle(360px, 530px);
+  }
+
+  @media (max-width: 800px) {
+    @include sliderStyle(475px, 720px);
+  }
+
+  @media (max-width: 750px) {
+    @include sliderStyle(475px, 700px);
+  }
+
+  @media screen and (max-device-width: 670px) {
+    @include sliderStyle(440px, 630px);
+  }
+
+  @media screen and (max-device-width: 600px) {
+    @include sliderStyle(300px, 510px);
+  }
+
+  .indicators {
+    position: relative;
+    text-align: center;
+    margin: 0.5% 0 0.5% 0;
+    width: 100%;
+    height: 5%;
+
+    .indicator {
+      position: relative;
+      display: inline-block;
+      margin: 2% 0.5%;
+      width: 3vh;
+      height: 3vh;
+      background-color: #C0C0C0;
+      border-radius: 50%;
+      -webkit-transition: 0.2s all linear;
+
+      &.indicator-active {
+        background-color: yellowgreen;
+      }
+    }
+  }
+ 
+  .navigator {
+    display: block;
+    position: absolute;
+    top: 45%;
+    height: 100%;
+    width: 30px;
+    padding: 15px 0 0 7px;
+    opacity: 0.4;
+    z-index: 1000;
+    color: black;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  #previous {
+    left: 0;
+  }
+
+  #next {
+    right: 0;
+  }
+
+}
